@@ -2,15 +2,15 @@ const express  = require('express');
 const app = express();
 
 
-app.get('/',function (req, res) {
+app.get('/server/',function (req, res) {
 	res.send('<h1>Home page</h1>')	
 })
 
-app.get('/about', function(req, res){
+app.get('/srver/about', function(req, res){
 	res.send('<h1>About page</h1>')
 })
 
-app.get('*', function(req, res){
+app.get('/server/*', function(req, res){
 	res.send('<h1>Error 404, page not found!!</h1>')
 })
 
